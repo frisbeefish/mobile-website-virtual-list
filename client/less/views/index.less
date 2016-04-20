@@ -1,0 +1,128 @@
+@import "library";
+
+body {
+
+    background-color:#eee;
+    
+
+    .mdl-layout__content {
+        padding:20px;
+
+
+
+  /************************************************
+     A card showing a message.
+  /************************************************/
+
+        .mdl-card {
+            min-height:0px;
+            width:100%;
+            margin-bottom:30px;
+    
+  
+  /************************************************
+     The round avatar image, title, and post date.
+  /************************************************/
+
+            .mdl-card__title {
+                position:relative;
+
+                img {
+                    width:50px;
+                    height:50px;
+                    .circleBorderRadius;
+                }
+
+                div.nameAndTime {
+                    position:relative;
+                    display:inline-block;
+                    height:50px;
+                    margin-left:16px;
+
+                    div.name {
+                        height:25px;
+                        padding:0px;
+
+                        h4 {
+                            position:relative;
+                            top:2px;
+                            line-height:25px;
+                            margin:0px;
+                            padding:0px;
+                            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                            color:#333;
+                            font-size:16px;
+                            font-weight:bold;
+                        }
+                    }
+
+                    div.time {
+                        height:25px;
+
+                        span {
+                            position:relative;
+                            bottom:0px;
+                            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                            color:#7C7C7C;
+                            font-size:14px;
+                            font-weight:300;
+                        }
+                    }
+                }
+            } /* end of .mdl-card__title */
+
+
+  /************************************************
+     The paragraph of text.
+  /************************************************/
+
+            .mdl-card__supporting-text { 
+                padding-top:0px;
+                font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+                color:#4C4C4C;
+                font-size:16px;
+                font-weight:400;
+                .noselect;
+            }
+
+        } /* end of .mdl-card */
+
+
+  /************************************************
+     When the "transitions" is added to a card, each CSS "transform" will be animated. If the card doesn't 
+     have the "transitions" class, then any "transform" applied to the card will be immidiate (not animated).
+  /************************************************/
+
+        .mdl-card.transitions {
+            -webkit-transition-property: -webkit-transform, height; 
+            -webkit-transition-duration: 100ms, 100ms; 
+            -webkit-transition-timing-function: ease-in, ease-in;
+
+            transition-property: transform, height;
+            transition-duration: 100ms, 100ms; 
+            transition-timing-function: ease-in, ease-in;
+        }
+
+        .mdl-card.fasttransitions {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 80ms; 
+            -webkit-transition-timing-function: ease-in;
+
+            transition-property: transform;
+            transition-duration: 80ms; 
+            transition-timing-function: ease-in;
+        }
+
+        .mdl-card.crazyfasttransitions {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 10ms; 
+            -webkit-transition-timing-function: ease-in;
+
+            transition-property: transform;
+            transition-duration: 10ms; 
+            transition-timing-function: ease-in;
+        }
+
+    } /* .mdl-layout__content */
+}
+

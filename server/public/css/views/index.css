@@ -1,0 +1,119 @@
+.circleBorderRadius {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+  background-color: #eee;
+  /* .mdl-layout__content */
+}
+body .mdl-layout__content {
+  padding: 20px;
+  /************************************************
+     A card showing a message.
+  /************************************************/
+  /* end of .mdl-card */
+  /************************************************
+     When the "transitions" is added to a card, each CSS "transform" will be animated. If the card doesn't 
+     have the "transitions" class, then any "transform" applied to the card will be immidiate (not animated).
+  /************************************************/
+}
+body .mdl-layout__content .mdl-card {
+  min-height: 0px;
+  width: 100%;
+  margin-bottom: 30px;
+  /************************************************
+     The round avatar image, title, and post date.
+  /************************************************/
+  /* end of .mdl-card__title */
+  /************************************************
+     The paragraph of text.
+  /************************************************/
+}
+body .mdl-layout__content .mdl-card .mdl-card__title {
+  position: relative;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title img {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title div.nameAndTime {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  margin-left: 16px;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title div.nameAndTime div.name {
+  height: 25px;
+  padding: 0px;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title div.nameAndTime div.name h4 {
+  position: relative;
+  top: 2px;
+  line-height: 25px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title div.nameAndTime div.time {
+  height: 25px;
+}
+body .mdl-layout__content .mdl-card .mdl-card__title div.nameAndTime div.time span {
+  position: relative;
+  bottom: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #7C7C7C;
+  font-size: 14px;
+  font-weight: 300;
+}
+body .mdl-layout__content .mdl-card .mdl-card__supporting-text {
+  padding-top: 0px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4C4C4C;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body .mdl-layout__content .mdl-card.transitions {
+  -webkit-transition-property: -webkit-transform, height;
+  -webkit-transition-duration: 100ms, 100ms;
+  -webkit-transition-timing-function: ease-in, ease-in;
+  transition-property: transform, height;
+  transition-duration: 100ms, 100ms;
+  transition-timing-function: ease-in, ease-in;
+}
+body .mdl-layout__content .mdl-card.fasttransitions {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 80ms;
+  -webkit-transition-timing-function: ease-in;
+  transition-property: transform;
+  transition-duration: 80ms;
+  transition-timing-function: ease-in;
+}
+body .mdl-layout__content .mdl-card.crazyfasttransitions {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 10ms;
+  -webkit-transition-timing-function: ease-in;
+  transition-property: transform;
+  transition-duration: 10ms;
+  transition-timing-function: ease-in;
+}
